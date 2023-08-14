@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="37.338" tests="7" skipped="0" failures="1" errors="0">
+<testcase classname="Trigger Get Request to obtain the list of all stations added to account" name="Trigger Get Request to obtain the list of all stations added to account" time="2.905">
+<system-out><![CDATA[
+Given Send a Get Request URL with API Key...................................passed
+Then validate the list of stations with HTTP Response success status code...passed
+]]></system-out>
+</testcase>
+<testcase classname="Successfully register weather station and verify HTTP response code is 201." name="Successfully register weather station and verify HTTP response code 201" time="0.795">
+<system-out><![CDATA[
+Given Call Post Method Base URL with API Key................................passed
+When the Header and Body Request Parameters is specified....................passed
+Then validate HTTP Response status code.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Successfully register weather station and verify HTTP response code is 201." name="Successfully register the weather station and verify HTTP response code 201" time="0.753">
+<system-out><![CDATA[
+Given Call a Post Method URL with API Key...................................passed
+When the Header and Body Request Parameters are specified...................passed
+Then validate the HTTP Response status code.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Money borrow estimation Comparision Negative Case" name="Money borrow estimation using power calculator" time="16.116">
+<failure type="java.lang.AssertionError" message="expected:&lt;482000&gt; but was:&lt;426,000&gt;">
+<![CDATA[java.lang.AssertionError: expected:<482000> but was:<426,000>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepDefinitions.LoanBorrowCalculations_NegTC1.validate_the_borrow_estimate_calculation(LoanBorrowCalculations_NegTC1.java:66)
+	at ✽.Validate the borrow estimate calculation(file:///C:/Users/prathipa/Desktop/prathi/eclipse-workspace/testbddcucumber/src/test/java/featureFiles/calculator_negative_TC1.feature:15)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User opens ANZ Bank website...........................................passed
+When User navigates to ANZ home loan calculator page........................passed
+And User enters annual income (before tax)..................................passed
+And User also enters annual other income (optional).........................passed
+And User enters his/her Monthly living expenses.............................passed
+And User enters Other loan monthly repayments...............................passed
+And User Total credit card limits...........................................passed
+Then Validate the borrow estimate calculation...............................failed
+]]></system-out>
+</testcase>
+<testcase classname="Money borrow estimation Comparision Positive Case" name="Money borrow estimation using power calculator" time="15.13">
+<system-out><![CDATA[
+Given User opens ANZ Bank website page......................................passed
+When User navigates to home loan calculator page............................passed
+And User enters the annual income...........................................passed
+And User also enters the annual other income................................passed
+And User enters Monthly living expenses.....................................passed
+And User enters also Other loan monthly repayments..........................passed
+And User gives Total credit card limits.....................................passed
+Then Validate borrow estimate calculation amount............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Post Request with API Key" name="To validate Post API Request with key" time="0.916">
+<system-out><![CDATA[
+Given Call a Post Method Request Base URL with Key..........................passed
+When Header and Body Request Parameters is specified........................passed
+Then validate Response status code..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Post Request without Key" name="To validate Post API Request without key" time="0.406">
+<system-out><![CDATA[
+Given Call a Post Method Request Base URL without Key.......................passed
+When Header and Body Request Parameters are specified.......................passed
+Then validate the Response status code......................................passed
+]]></system-out>
+</testcase>
+</testsuite>
