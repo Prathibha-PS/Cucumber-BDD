@@ -9,6 +9,6 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features="src/test/java/featureFiles", glue="stepDefinitions", plugin={"pretty", "html:target/cucumber-reports/htmlreport.html", "json:target/cucumber-reports/jsonreport.json",
 "junit:target/cucumber-reports/junitreport.xml" })
 
-public class RunnerClass {
+public class TestRunner {
 
 }

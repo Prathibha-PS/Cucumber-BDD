@@ -1,0 +1,7 @@
+-------------------------------------------------------------------------------
+Test set: runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 59.062 s <<< FAILURE! - in runner.TestRunner
+Money borrow estimation using power calculator(Money borrow estimation Comparision Negative Case)  Time elapsed: 28.49 s  <<< FAILURE!
+java.lang.AssertionError: expected:<482000> but was:<426,000>
+
